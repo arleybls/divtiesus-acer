@@ -33,21 +33,6 @@ Inherited feature set:
 - Kempston joystick interface (Atari and Sega controllers)
 - Soft +3E feature removed (as in the maple edition)
 
-## Building the CPLD
-
-Requires Intel/Altera **Quartus Prime** (Lite is sufficient). From the `cpld/` directory:
-
-```sh
-make build     # quartus_sh --flow compile tld_divtiesus
-make program   # quartus_pgm via JTAG, flashes output_files/tld_divtiesus.pof
-make clean     # remove db/, incremental_db/, output_files/
-make report    # summarize errors/criticals/warnings from the last build
-```
-
-> Build quirk (carried over from upstream, not specific to this fork): `segajoy.v` is **not**
-> listed under `VERILOG_FILE` in `tld_divtiesus.qsf` even though the top module instantiates it;
-> Quartus picks it up via project auto-discovery.
-
 ## License
 
 GPLv3, inherited from the upstream sources (see the GPL headers in `cpld/tld_divtiesus.v` and the
