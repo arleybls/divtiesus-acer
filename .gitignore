@@ -1,0 +1,26 @@
+# KiCad local-history backups (contains a nested git repo)
+.history/
+
+# KiCad backups / autosave
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+*.backup
+fp-info-cache
+~*.lck
+
+# Quartus build artifacts
+cpld/db/
+cpld/incremental_db/
+cpld/output_files/
+cpld/simulation/
+cpld/greybox_tmp/
+cpld/*.qws
+cpld/*.rpt
+cpld/*.summary
+cpld/*.smsg
+cpld/*.jdi
+cpld/*.pin
+cpld/*.pof
+cpld/*.sof
