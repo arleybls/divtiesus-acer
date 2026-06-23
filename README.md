@@ -5,6 +5,8 @@ A custom-PCB fork of **DivTIESUS** — a DivMMC-compatible SD/MMC card interface
 This fork is a **board re-layout only**: the CPLD firmware and its pinout are unchanged from
 upstream, so the existing logic runs on the new PCB without modification.
 
+![divtiesus-acer assembled board](images/photo.jpg)
+
 ## Lineage
 
 | Stage | Author | Repo |
